@@ -1,5 +1,6 @@
 import requests
 import json
+import datetime
 from math import atan, exp, pi, degrees
 
 def mercator_to_latlon(x, y):
@@ -46,4 +47,14 @@ if __name__ == "__main__":
     print("Fetching camera data...")
     data = fetch_camera_data()
     save_json(data)
+
+    
+    output = {
+        "last_updated": datetime.datetime.utcnow().isoformat() + "Z",
+        "cameras": cameras
+    }
+    
+    with open("cameras.json", "w") as f:
+        json.dump(output, f, indent=2)
+        
     print(f"Saved {len(data)} cameras to cameras.json")
