@@ -36,6 +36,12 @@ def fetch_camera_data():
                 "status": status
             })
 
+    cameras.append({
+        "latitude": 50,
+        "longitude": 50,
+        "status": "2A",
+    })
+
     return sorted(cameras, key=lambda cam: (cam["latitude"], cam["longitude"]))
 
 def save_json(cameras):
