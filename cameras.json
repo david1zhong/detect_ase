@@ -58,5 +58,10 @@
     "latitude": 43.487815,
     "longitude": -79.697207,
     "status": "2A"
+  },
+  {
+    "latitude": 50,
+    "longitude": 50,
+    "status": "2A"
   }
 ]
