@@ -40,6 +40,11 @@
     "status": "2A"
   },
   {
+    "latitude": 43.472921,
+    "longitude": -79.744986,
+    "status": "2A"
+  },
+  {
     "latitude": 43.473767,
     "longitude": -79.650354,
     "status": "2A"
@@ -52,6 +57,11 @@
   {
     "latitude": 43.478118,
     "longitude": -79.722517,
+    "status": "2A"
+  },
+  {
+    "latitude": 43.484646,
+    "longitude": -79.683747,
     "status": "2A"
   },
   {
