@@ -1,6 +1,8 @@
 import requests
 import json
 from math import atan, exp, pi, degrees
+from datetime import datetime
+import pytz
 
 def mercator_to_latlon(x, y):
     lon = x * 180 / 20037508.34
@@ -39,11 +41,20 @@ def fetch_camera_data():
     return sorted(cameras, key=lambda cam: (cam["latitude"], cam["longitude"]))
 
 def save_json(cameras):
+    est = pytz.timezone('America/New_York')
+    now_est = datetime.now(est)
+    timestamp = now_est.strftime("%Y-%m-%d %H:%M %Z")
+    
+    output = {
+        "_comment": f"Last updated {timestamp}",
+        "cameras": cameras
+    }
+
     with open("cameras.json", "w") as f:
-        json.dump(cameras, f, indent=2)
+        json.dump(output, f, indent=2)
 
 if __name__ == "__main__":
     print("Fetching camera data...")
     data = fetch_camera_data()
-    save_json(data)       
+    save_json(data)
     print(f"Saved {len(data)} cameras to cameras.json")
