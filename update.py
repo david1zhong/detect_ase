@@ -1,7 +1,8 @@
 import requests
 import json
 from math import atan, exp, pi, degrees
-from datetime import datetime, timedelta
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 def mercator_to_latlon(x, y):
     lon = x * 180 / 20037508.34
@@ -40,9 +41,9 @@ def fetch_camera_data():
     return sorted(cameras, key=lambda cam: (cam["latitude"], cam["longitude"]))
 
 def save_json(cameras):
-    now_utc = datetime.utcnow()
-    now_est = now_utc - timedelta(hours=5)
-    timestamp = now_est.strftime("%Y-%m-%d %H:%M EST")
+    eastern = ZoneInfo("America/New_York")
+    now_et = datetime.now(eastern)
+    timestamp = now_et.strftime("%Y-%m-%d %H:%M %Z")
 
     output = {
         "_comment": f"Last updated {timestamp}",
