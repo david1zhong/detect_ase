@@ -1,72 +1,75 @@
-[
-  {
-    "latitude": 43.394656,
-    "longitude": -79.706926,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.402727,
-    "longitude": -79.724627,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.430881,
-    "longitude": -79.737599,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.433361,
-    "longitude": -79.685617,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.43406,
-    "longitude": -79.729403,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.439943,
-    "longitude": -79.718224,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.452647,
-    "longitude": -79.66073,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.466419,
-    "longitude": -79.73591,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.472921,
-    "longitude": -79.744986,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.473767,
-    "longitude": -79.650354,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.477807,
-    "longitude": -79.736281,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.478118,
-    "longitude": -79.722517,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.484646,
-    "longitude": -79.683747,
-    "status": "2A"
-  },
-  {
-    "latitude": 43.487815,
-    "longitude": -79.697207,
-    "status": "2A"
-  }
-]
+{
+  "_comment": "Last updated 2025-07-08 21:18 EST",
+  "cameras": [
+    {
+      "latitude": 43.394656,
+      "longitude": -79.706926,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.402727,
+      "longitude": -79.724627,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.430881,
+      "longitude": -79.737599,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.433361,
+      "longitude": -79.685617,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.43406,
+      "longitude": -79.729403,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.439943,
+      "longitude": -79.718224,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.452647,
+      "longitude": -79.66073,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.466419,
+      "longitude": -79.73591,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.472921,
+      "longitude": -79.744986,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.473767,
+      "longitude": -79.650354,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.477807,
+      "longitude": -79.736281,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.478118,
+      "longitude": -79.722517,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.484646,
+      "longitude": -79.683747,
+      "status": "2A"
+    },
+    {
+      "latitude": 43.487815,
+      "longitude": -79.697207,
+      "status": "2A"
+    }
+  ]
+}
