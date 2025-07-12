@@ -81,9 +81,13 @@ def save_json(cameras, changes):
         json.dump(output, f, indent=2)
 
 if __name__ == "__main__":
-    print("Fetching camera data...")
     new_data = fetch_camera_data()
+
+    if not new_data:
+        exit(1)
+
     old_data = load_previous_cameras()
     changes = count_location_changes(old_data, new_data)
     save_json(new_data, changes)
     print(f"Saved {len(new_data)} cameras to cameras.json with {changes} change(s).")
+
